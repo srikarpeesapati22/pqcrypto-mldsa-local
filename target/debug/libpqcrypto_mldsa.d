@@ -1,0 +1,1 @@
+/home/neala/pqcrypto-mldsa-local/target/debug/libpqcrypto_mldsa.rlib: /home/neala/pqcrypto-mldsa-local/build.rs /home/neala/pqcrypto-mldsa-local/src/ffi.rs /home/neala/pqcrypto-mldsa-local/src/lib.rs /home/neala/pqcrypto-mldsa-local/src/mldsa44.rs /home/neala/pqcrypto-mldsa-local/src/mldsa65.rs /home/neala/pqcrypto-mldsa-local/src/mldsa87.rs

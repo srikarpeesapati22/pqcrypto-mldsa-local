@@ -203,15 +203,15 @@ macro_rules! gen_keypair_with_seed {
         let mut pk = PublicKey::new();
         let mut sk = SecretKey::new();
         assert_eq!(
-            unsafe { ffi::$variant(pk.0.as_mut_ptr(), sk.0.as_mut_ptr(), $seed.as_mut_ptr()) },
+            unsafe { ffi::$variant(pk.0.as_mut_ptr(), sk.0.as_mut_ptr(), $seed.as_ptr()) },
             0
         );
         (pk, sk)
     }};
 }
 
-pub fn keypair_with_seed() -> (PublicKey, SecretKey) {
-    gen_keypair_with_seed!(PQCLEAN_MLDSA44_CLEAN_crypto_sign_keypair_with_seed)
+pub fn keypair_with_seed(seed: &[u8]) -> (PublicKey, SecretKey) {
+    gen_keypair_with_seed!(PQCLEAN_MLDSA44_CLEAN_crypto_sign_keypair_with_seed, seed)
 }
 
 macro_rules! gen_signature {
