@@ -27,7 +27,8 @@ pub mod mldsa87;
 
 pub use crate::mldsa44::{
     detached_sign as mldsa44_detached_sign, detached_sign_ctx as mldsa44_detached_sign_ctx,
-    keypair as mldsa44_keypair, keypair_with_seed as mldsa44_keypair_with_seed, open as mldsa44_open, open_ctx as mldsa44_open_ctx,
+    keypair as mldsa44_keypair, keypair_with_seed as mldsa44_keypair_with_seed,
+    open as mldsa44_open, open_ctx as mldsa44_open_ctx,
     public_key_bytes as mldsa44_public_key_bytes, secret_key_bytes as mldsa44_secret_key_bytes,
     sign as mldsa44_sign, sign_ctx as mldsa44_sign_ctx, signature_bytes as mldsa44_signature_bytes,
     verify_detached_signature as mldsa44_verify_detached_signature,

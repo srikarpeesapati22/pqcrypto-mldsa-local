@@ -71,7 +71,11 @@ pub const PQCLEAN_MLDSA87_AARCH64_CRYPTO_BYTES: usize = 4627;
 #[link(name = "ml-dsa-44_clean")]
 extern "C" {
     pub fn PQCLEAN_MLDSA44_CLEAN_crypto_sign_keypair(pk: *mut u8, sk: *mut u8) -> c_int;
-    pub fn PQCLEAN_MLDSA44_CLEAN_crypto_sign_keypair_with_seed(pk: *mut u8, sk: *mut u8, seed: *const u8) -> c_int;
+    pub fn PQCLEAN_MLDSA44_CLEAN_crypto_sign_keypair_with_seed(
+        pk: *mut u8,
+        sk: *mut u8,
+        seed: *const u8,
+    ) -> c_int;
     pub fn PQCLEAN_MLDSA44_CLEAN_crypto_sign(
         sm: *mut u8,
         smlen: *mut usize,
